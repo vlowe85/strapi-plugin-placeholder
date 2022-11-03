@@ -14,7 +14,7 @@ module.exports = ({ strapi }) => ({
     try {
       const settings = getService(strapi, 'settings').get();
       const { blurhash } = await getPlaiceholder(url, settings);
-      return blurhash;
+      return blurhash.hash;
     } catch (e) {
       strapi.log.error(e);
       return null;
