@@ -8,4 +8,7 @@ module.exports = ({ strapi }) => {
   strapi.plugin('upload').contentTypes.file.attributes.placeholder = {
     type: 'text',
   };
+  strapi.plugin('upload').contentTypes.file.attributes.placeholder_dark = {
+    type: 'text',
+  };
 };
