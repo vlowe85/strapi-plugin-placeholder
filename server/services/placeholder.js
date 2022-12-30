@@ -31,7 +31,7 @@ module.exports = ({ strapi }) => ({
 
   getUrl(url, colour) {
     if(url.endsWith('.png')) {
-      return `https://image-processing.my-possible-self.com/v1/fill?url=${url}&bg_colour=${colour}&size=400&quality=50`;
+      return `https://dev-image-processing.my-possible-self.com/v1/fill?url=${url}&bg_colour=${colour}&size=400&quality=50`;
     } else {
       return url;
     }
